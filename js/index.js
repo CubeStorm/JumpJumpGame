@@ -217,6 +217,7 @@ function speedUp() {
 function reload() {
     game.floor();
     game.player();
+    game.box();
 }
 
 //=*=\\ Wywołaj funkcje startową //=*=\\
