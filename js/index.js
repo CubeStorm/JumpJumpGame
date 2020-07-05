@@ -85,7 +85,7 @@ var game = {
             boxRanX = Math.floor(Math.random() * cw - 400) + 1000;
             boxX = boxRanX;
         } else {
-            boxX -= 10;
+            boxX -= 5;
         }
         ctx.moveTo(boxX, boxY);
         ctx.lineTo(boxX, boxY - boxSize);
