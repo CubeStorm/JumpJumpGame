@@ -18,5 +18,6 @@ var plSpeed = 10; // Szybkość poruszania Gracza
 //var spikeX = 600; // Wspórzędna X kolców
 
 //=*=\\ PUDŁO //=*=\\
+var boxSize = 40; // Wspórzędna Y kolców
 var boxY = 450; // Wspórzędna Y kolców
 var boxX = 800; // Wspórzędna X kolców

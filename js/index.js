@@ -80,7 +80,7 @@ var game = {
         ctx.lineTo(spikeX + 40, spikeY);
         ctx.stroke();
     },*/
-    box: function() { // Rysowanie (pojedyncze pudło)
+    box: function() { // Rysowanie przeszkód (pojedyncze pudło)
         if (boxX <= 0) {
             boxRanX = Math.floor(Math.random() * cw - 400) + 1000;
             boxX = boxRanX;
@@ -88,22 +88,22 @@ var game = {
             boxX -= 30;
         }
         ctx.moveTo(boxX, boxY);
-        ctx.lineTo(boxX, boxY - 40);
+        ctx.lineTo(boxX, boxY - boxSize);
 
-        ctx.moveTo(boxX, boxY - 40);
-        ctx.lineTo(boxX + 40, boxY - 40);
+        ctx.moveTo(boxX, boxY - boxSize);
+        ctx.lineTo(boxX + boxSize, boxY - boxSize);
 
-        ctx.moveTo(boxX + 40, boxY - 40);
-        ctx.lineTo(boxX + 40, boxY);
+        ctx.moveTo(boxX + boxSize, boxY - boxSize);
+        ctx.lineTo(boxX + boxSize, boxY);
 
-        ctx.moveTo(boxX + 40, boxY);
+        ctx.moveTo(boxX + boxSize, boxY);
         ctx.lineTo(boxX, boxY);
 
         ctx.moveTo(boxX, boxY);
-        ctx.lineTo(boxX + 40, boxY - 40);
+        ctx.lineTo(boxX + boxSize, boxY - boxSize);
 
-        ctx.moveTo(boxX, boxY - 40);
-        ctx.lineTo(boxX + 40, boxY);
+        ctx.moveTo(boxX, boxY - boxSize);
+        ctx.lineTo(boxX + boxSize, boxY);
         ctx.stroke();
     },
     end: function() { //Rysowanie napisów końcowych
@@ -112,12 +112,12 @@ var game = {
         ctx.fillText("Koniec gry", 350, 270);
         ctx.font = "16px Arial";
         ctx.fontWeight = "normal";
-        ctx.fillText("Aby zagrać ponownie użyj klawisza: P ", 700, 45);
+        ctx.fillText("Aby zagrać ponownie użyj klawisza P ", 700, 45);
         ctx.stroke();
     },
     crash: function() { //Sprawdzanie czy nie zaszła kolizja
-        var boxWidth = boxX + 40;
-        var boxHeight = boxY + 40;
+        var boxWidth = boxX + boxSize;
+        var boxHeight = boxY + boxSize;
 
         if (plX + plWidth >= boxX && plX + plWidth <= boxX + boxWidth) {
             if (plY + plHeight <= boxY && plY + plHeight + plWidth >= boxY) {
