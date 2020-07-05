@@ -12,16 +12,16 @@ window.addEventListener('keydown', function(event) {
             game.down();
         break;
 
-        case 39: // Strzałka w prawo
-            game.clear();
-            game.right();
-        break;
-
         case 37: // Strzałka w lewo
             game.clear();
             game.left();
         break;
         */
+
+        case 39: // Strzałka w prawo
+            game.clear();
+            game.right();
+        break;
 
         case 18: // ALT
         case 38: // Strzałka w górę
