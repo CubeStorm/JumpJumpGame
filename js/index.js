@@ -49,14 +49,14 @@ var game = {
         if (jumpVar == false) {
             game.jumpVerify();
             for (let i = 1; i < 10; i++) {
-                setTimeout(game.clear, i*40);
-                setTimeout(game.up, i*40);
-                setTimeout(reload, i*40);
+                setTimeout(game.clear, i*30);
+                setTimeout(game.up, i*30);
+                setTimeout(reload, i*30);
             }
             for (let i = 1; i < 10; i++) {
-                setTimeout(game.clear, i*40 + 400);
-                setTimeout(game.down, i*40 + 400);
-                setTimeout(reload, i*40 + 400);
+                setTimeout(game.clear, i*30 + 400);
+                setTimeout(game.down, i*30 + 400);
+                setTimeout(reload, i*30 + 400);
             }
             setTimeout(game.jumpVerify, 10*40 + 300);
         }
