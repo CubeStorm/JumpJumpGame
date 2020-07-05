@@ -85,10 +85,9 @@ var game = {
             boxRanX = Math.floor(Math.random() * cw - 400) + 1000;
             boxX = boxRanX;
         } else {
-            boxX -= 30;
+            boxX -= 10;
         }
-        new component(boxSize, boxSize, boxColor, boxX, boxY);
-        /*ctx.moveTo(boxX, boxY);
+        ctx.moveTo(boxX, boxY);
         ctx.lineTo(boxX, boxY - boxSize);
 
         ctx.moveTo(boxX, boxY - boxSize);
@@ -105,7 +104,7 @@ var game = {
 
         ctx.moveTo(boxX, boxY - boxSize);
         ctx.lineTo(boxX + boxSize, boxY);
-        ctx.stroke();*/
+        ctx.stroke();
     },
     end: function() { //Rysowanie napisów końcowych
         ctx.font = "72px Arial";
@@ -217,7 +216,6 @@ function speedUp() {
 function reload() {
     game.floor();
     game.player();
-    game.box();
 }
 
 //=*=\\ Wywołaj funkcje startową //=*=\\
