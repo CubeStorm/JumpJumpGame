@@ -21,3 +21,4 @@ var plSpeed = 10; // Szybkość poruszania Gracza
 var boxSize = 40; // Wspórzędna Y kolców
 var boxY = 450; // Wspórzędna Y kolców
 var boxX = 800; // Wspórzędna X kolców
+var boxColor = "red"; // Wspórzędna X kolców
