@@ -58,7 +58,7 @@ var game = {
                 setTimeout(game.down, i*25 + 430);
                 setTimeout(reload, i*25 + 430);
             }
-            setTimeout(game.jumpVerify, 18*25 + 450);
+            setTimeout(game.jumpVerify, 18*25 + 435);
         }
     },
     floor: function() { // Rysowanie podłogi
