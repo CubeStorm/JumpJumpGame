@@ -53,7 +53,7 @@ var game = {
                 setTimeout(game.up, i*20);
                 setTimeout(reload, i*20);
             }
-            for (let i = 1; i < 20; i++) {
+            for (let i = 1; i < 15; i++) {
                 setTimeout(game.clear, i*20 + 200);
                 setTimeout(game.down, i*20 + 200);
                 setTimeout(reload, i*20 + 200);
