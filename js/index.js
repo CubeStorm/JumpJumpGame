@@ -85,7 +85,7 @@ var game = {
             boxRanX = Math.floor(Math.random() * cw - 400) + 1000;
             boxX = boxRanX;
         } else {
-            boxX -= 10;
+            boxX -= 30;
         }
         new component(boxSize, boxSize, boxColor, boxX, boxY);
         /*ctx.moveTo(boxX, boxY);
