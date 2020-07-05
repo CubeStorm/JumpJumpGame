@@ -54,9 +54,9 @@ var game = {
                 setTimeout(reload, i*20);
             }
             for (let i = 1; i < 20; i++) {
-                setTimeout(game.clear, i*20 + 100);
-                setTimeout(game.down, i*20 + 100);
-                setTimeout(reload, i*20 + 100);
+                setTimeout(game.clear, i*20 + 200);
+                setTimeout(game.down, i*20 + 200);
+                setTimeout(reload, i*20 + 200);
             }
             setTimeout(game.jumpVerify, 15*20 + 100);
         }
