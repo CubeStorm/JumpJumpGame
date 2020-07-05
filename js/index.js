@@ -54,11 +54,11 @@ var game = {
                 setTimeout(reload, i*25);
             }
             for (let i = 1; i < 18; i++) {
-                setTimeout(game.clear, i*25 + 450);
-                setTimeout(game.down, i*25 + 450);
-                setTimeout(reload, i*25 + 450);
+                setTimeout(game.clear, i*25 + 430);
+                setTimeout(game.down, i*25 + 430);
+                setTimeout(reload, i*25 + 430);
             }
-            setTimeout(game.jumpVerify, 18*25 + 470);
+            setTimeout(game.jumpVerify, 18*25 + 450);
         }
     },
     floor: function() { // Rysowanie podłogi
