@@ -48,17 +48,17 @@ var game = {
     jump: function() { // Skok
         if (jumpVar == false) {
             game.jumpVerify();
-            for (let i = 1; i < 15; i++) {
-                setTimeout(game.clear, i*20);
-                setTimeout(game.up, i*20);
-                setTimeout(reload, i*20);
+            for (let i = 1; i < 18; i++) {
+                setTimeout(game.clear, i*25);
+                setTimeout(game.up, i*25);
+                setTimeout(reload, i*25);
             }
-            for (let i = 1; i < 15; i++) {
-                setTimeout(game.clear, i*20 + 200);
-                setTimeout(game.down, i*20 + 200);
-                setTimeout(reload, i*20 + 200);
+            for (let i = 1; i < 18; i++) {
+                setTimeout(game.clear, i*25 + 200);
+                setTimeout(game.down, i*25 + 200);
+                setTimeout(reload, i*25 + 200);
             }
-            setTimeout(game.jumpVerify, 15*20 + 100);
+            setTimeout(game.jumpVerify, 15*25 + 100);
         }
     },
     floor: function() { // Rysowanie podłogi
